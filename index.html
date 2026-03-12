@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quick Shop Dashboard</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6fb;
+}
+
+/* Header */
+
+.header{
+    background:linear-gradient(135deg,#6a5af9,#a742f5);
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.header h1{
+    margin:0;
+}
+
+.header p{
+    opacity:0.9;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:600px;
+    margin:auto;
+    margin-top:-30px;
+}
+
+/* Store cards */
+
+.store{
+    display:flex;
+    align-items:center;
+    background:white;
+    padding:15px;
+    margin:12px 0;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.store:hover{
+    transform:scale(1.03);
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+.logo{
+    font-size:30px;
+    margin-right:15px;
+}
+
+.store h3{
+    margin:0;
+}
+
+.store p{
+    margin:3px 0 0;
+    color:gray;
+    font-size:14px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:gray;
+    font-size:13px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>Quick Shop</h1>
+<p>Select your favorite store instantly</p>
+</div>
+
+<div class="container">
+
+<div class="store" onclick="openStore('https://www.amazon.in')">
+<div class="logo">🛒</div>
+<div>
+<h3>Amazon</h3>
+<p>Fast delivery & huge product collection</p>
+</div>
+</div>
+
+<div class="store" onclick="openStore('https://www.flipkart.com')">
+<div class="logo">📦</div>
+<div>
+<h3>Flipkart</h3>
+<p>Best deals on electronics & fashion</p>
+</div>
+</div>
+
+<div class="store" onclick="openStore('https://www.myntra.com')">
+<div class="logo">👗</div>
+<div>
+<h3>Myntra</h3>
+<p>Trending fashion brands</p>
+</div>
+</div>
+
+<div class="store" onclick="openStore('https://www.ikea.com')">
+<div class="logo">🪑</div>
+<div>
+<h3>IKEA</h3>
+<p>Furniture & home decor</p>
+</div>
+</div>
+
+<div class="store" onclick="openStore('https://www.ajio.com')">
+<div class="logo">🧥</div>
+<div>
+<h3>AJIO</h3>
+<p>Stylish clothing collection</p>
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+Quick Shop Dashboard | Simple Web Project
+</div>
+
+<script>
+
+function openStore(url)
+{
+    window.open(url,"_blank");
+}
+
+</script>
+
+</body>
+</html>
